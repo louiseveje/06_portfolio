@@ -1,0 +1,58 @@
+/** @format */
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #aad9ff;
+}
+
+ul {
+  list-style: none;
+  color: #707070;
+  font-size: 1.7rem;
+}
+
+.logo {
+  font-family: petit formal script;
+  color: #707070;
+  font-size: 3rem;
+}
+
+footer {
+  font-size: 1.7rem;
+  color: #707070;
+}
+
+.forside {
+  background-image: url(billeder/baggrund_forside.webp);
+  height: 130vh;
+  background-position: 52% 147%;
+  background-size: cover;
+}
+
+.cv {
+  background-image: url(billeder/baggrund_cv.webp);
+  height: 130vh;
+  background-position: 3% 147%;
+}
+
+.forside_portfolio {
+  background-image: url(billeder/baggrund_portfolio_forside.webp);
+  height: 130vh;
+  background-position: 3% 147%;
+}
+
+.portfolio {
+  background-image: url(billeder/baggrund_portfolio.webp);
+  height: 130vh;
+  background-position: 3% 147%;
+}

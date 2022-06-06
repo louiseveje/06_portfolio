@@ -1,0 +1,12 @@
+/** @format */
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  place-content: space-between;
+  margin: 10px;
+}
