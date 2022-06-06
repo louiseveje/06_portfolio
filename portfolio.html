@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,16 +15,19 @@
   </head>
 
   <body class="portfolio">
-    <header>
+    <header class="header">
       <div class="logo">
         <a href="index.html">Portfolio</a>
       </div>
 
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="cv.html">Om mig</a></li>
-        <li><a href="forsideportfolio.html">Portfolio</a></li>
-      </ul>
+      <nav class="main-menu">
+        <button class="toggle-btn"><img src="svg/burgermenu.svg" alt="burgermenu" /></button>
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="cv.html">Om mig</a></li>
+          <li><a href="forsideportfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main></main>
@@ -35,5 +38,7 @@
         <p>1. semester</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

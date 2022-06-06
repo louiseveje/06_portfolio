@@ -1,4 +1,6 @@
 /** @format */
+
+/* placering footer */
 footer {
   position: fixed;
   bottom: 10px;
@@ -9,4 +11,104 @@ footer {
   display: flex;
   place-content: space-between;
   margin: 10px;
+}
+
+/* placering baggrundsbilleder mobile*/
+.forside {
+  background-image: url(billeder/baggrund_forside.webp);
+  height: 90vh;
+  background-position: 52% 147%;
+  background-size: cover;
+}
+
+.cv {
+  background-image: url(billeder/baggrund_cv.webp);
+  height: 110vh;
+  background-position: 3% 147%;
+  background-size: cover;
+}
+
+.forside_portfolio {
+  background-image: url(billeder/baggrund_portfolio_forside.webp);
+  height: 100vh;
+  background-position: 10% 147%;
+  background-size: cover;
+}
+
+.portfolio {
+  background-image: url(billeder/baggrund_portfolio.webp);
+  height: 90vh;
+  background-position: 3% 147%;
+  background-size: cover;
+}
+
+/* placering baggrundsbilleder desktop*/
+@media (min-width: 1170px) {
+  .forside {
+    height: 110vh;
+  }
+
+  .forside_portfolio {
+    height: 110vh;
+  }
+
+  .portfolio {
+    height: 110vh;
+  }
+}
+
+/* placering header desktop*/
+/* logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+/* menu*/
+.main-menu ul {
+  /* 2. Få menu elementerne til at stå ved siden af hinanden */
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* skjul burgermenu */
+.toggle-btn {
+  background: transparent;
+  cursor: pointer;
+
+  display: none; /* Skjul knappen som standard */
+}
+
+/* placering burgermenu mobile*/
+@media (max-width: 600px) {
+  .header {
+    /* få header til at stå ved siden af hinanden */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  }
+
+  .main-menu {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  }
+
+  .main-menu ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .main-menu.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    border-top: 1px solid #707070;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    gap: 0;
+  }
 }
