@@ -1,13 +1,14 @@
 /** @format */
 
-/* placering header desktop*/
+/******** placering header desktop ********/
 /* logo */
 .logo {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
-/* menu*/
+
+/* menu */
 .main-menu ul {
   /* 2. Få menu elementerne til at stå ved siden af hinanden */
   display: flex;
@@ -23,8 +24,8 @@
   display: none; /* Skjul knappen som standard */
 }
 
-/* placering burgermenu mobile*/
-@media (max-width: 600px) {
+/******** placering burgermenu mobile ********/
+@media (max-width: 700px) {
   .header {
     /* få header til at stå ved siden af hinanden */
     display: flex;
@@ -57,20 +58,20 @@
   }
 }
 
-/* placering footer */
+/******** placering footer ********/
 footer {
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
+  padding: 8px;
 }
 
 .footer {
   display: flex;
   place-content: space-between;
-  margin: 10px;
 }
 
-/* placering baggrundsbilleder mobile*/
+/******** placering baggrundsbilleder mobile ********/
 .forside {
   background-image: url(billeder/baggrund_forside.webp);
   height: 100vh;
@@ -99,7 +100,7 @@ footer {
   background-size: cover;
 }
 
-/* placering baggrundsbilleder desktop*/
+/******** placering baggrundsbilleder desktop ********/
 @media (min-width: 1170px) {
   .forside {
     height: 110vh;
@@ -111,5 +112,92 @@ footer {
 
   .portfolio {
     height: 110vh;
+  }
+}
+
+/******** placering om mig mobile ********/
+.cv_1 {
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
+.portraet_tekst {
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+/******** placering om mig desktop ********/
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 0.5fr; /*størrelsen på hver kolonne*/
+    gap: 5px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .portraet_tekst {
+    order: -1;
+    grid-column-start: 2; /* start på kolonne 2 */
+    grid-column-end: 3; /* slut på kolonne 3 */
+  }
+
+  .portraet_billede {
+    width: 300px;
+    grid-column-start: 3; /*start på kolonne 3*/
+    grid-column-end: 4; /* slut på kolonne 4 */
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr; /* størrelsen på hver kolonne */
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .portraet_tekst {
+    order: -1;
+    grid-column-start: 2; /* start på kolonne 2 */
+    grid-column-end: 3; /* slut på kolonne 3 */
+    width: 60ch; /* max 60 characters pr linje */
+  }
+
+  .portraet_billede {
+    width: 350px;
+    grid-column-start: 3; /* start på kolonne 3 */
+    grid-column-end: 4; /* slut på kolonne 4 */
+  }
+}
+
+/******** placering cv mobile med flex ********/
+.cv_1 h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cv_tekst p {
+  padding-bottom: 25px;
+}
+
+/******** placering cv desktop med grid ********/
+@media (min-width: 700px) {
+  .cv_tekst {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* størrelsen på hver kolonne */
+  }
+
+  .cv_tekst p {
+    padding-bottom: 25px;
+    max-width: 70ch; /* max 70 characters pr linje */
+    grid-column-start: 2; /* start på kolonne 2 */
+  }
+
+  .cv_tekst h1,
+  h2 {
+    padding-bottom: 25px;
+    grid-column-start: 2; /* start på kolonne 2 */
   }
 }
