@@ -103,7 +103,8 @@ footer {
 /******** placering baggrundsbilleder desktop ********/
 @media (min-width: 1170px) {
   .forside {
-    height: 110vh;
+    height: 100vh;
+    background-position: 50% 9%;
   }
 
   .forside_portfolio {
@@ -132,7 +133,7 @@ footer {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 0.5fr; /*størrelsen på hver kolonne*/
     gap: 5px;
-    padding-top: 20px;
+    padding-top: 40px;
     margin-bottom: 50px;
   }
 
@@ -199,5 +200,33 @@ footer {
   h2 {
     padding-bottom: 25px;
     grid-column-start: 2; /* start på kolonne 2 */
+  }
+}
+
+/******** placering af portfolio forside mobile ********/
+.knap {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.temaer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/******** placering af portfolio forside mobile ********/
+@media (min-width: 700px) {
+  .temaer img {
+    max-width: 550px;
+  }
+  .temaer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }

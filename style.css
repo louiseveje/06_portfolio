@@ -12,6 +12,10 @@ img {
   height: auto;
 }
 
+body {
+  background-color: #aad9ff;
+}
+
 /********** STYLING HEADER **********/
 ul {
   list-style: none;
@@ -61,4 +65,48 @@ footer {
   padding-bottom: 5px;
   font-weight: bolder;
   font-size: 1.1rem;
+}
+
+/************ styling af knapper**************/
+.knap_portfolio {
+  width: 168px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #fdc855;
+
+  text-align: center;
+  font-family: open sans;
+  font-size: large;
+  padding-top: 8px;
+}
+.knap_portfolio:hover {
+  box-shadow: 0 2px 10px 0 #ff4d00;
+}
+.knap_portfolio:active {
+  background-color: #ff4d00;
+  box-shadow: 0 2px 10px 0 #fdc855;
+  transform: translateY(3px);
+}
+
+.web_knap,
+.ux_knap,
+.animation_knap,
+.indhold_knap {
+  width: 249px;
+  height: 65px;
+  cursor: pointer;
+  background-color: #fdc855;
+
+  text-align: center;
+  font-family: open sans;
+  font-size: large;
+  padding-top: 8px;
+}
+.knap_portfolio:hover {
+  box-shadow: 0 2px 10px 0 #ff4d00;
+}
+.knap_portfolio:active {
+  background-color: #ff4d00;
+  box-shadow: 0 2px 10px 0 #fdc855;
+  transform: translateY(3px);
 }
