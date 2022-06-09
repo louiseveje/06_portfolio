@@ -22,6 +22,8 @@
   cursor: pointer;
 
   display: none; /* Skjul knappen som standard */
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 /******** placering burgermenu mobile ********/
@@ -50,11 +52,11 @@
   .main-menu.shown ul {
     /* Vis menu-listen, når klassen ".shown" er til stede */
     border-top: 1px solid #707070;
-    padding-top: 1rem;
+    padding: 1rem;
     display: flex;
     flex: 1 1 100%;
     flex-flow: column;
-    gap: 2px;
+    gap: 1rem;
   }
 }
 
@@ -204,6 +206,7 @@ footer {
 }
 
 /******** placering af portfolio forside mobile ********/
+
 .knap {
   display: flex;
   justify-content: space-around;
@@ -218,7 +221,7 @@ footer {
   margin-bottom: 40px;
 }
 
-/******** placering af portfolio forside mobile ********/
+/******** placering af portfolio forside desktop ********/
 @media (min-width: 700px) {
   .temaer img {
     max-width: 550px;
@@ -229,4 +232,41 @@ footer {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+}
+
+/* ******* placering af portfolio mobile ******* */
+.portfolio h1 {
+  display: flex;
+  place-content: center;
+}
+
+/* placering af 1 knap */
+.web_btn,
+.animation_btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* placering af 2-3 knap */
+.ux_btn,
+.indhold_btn {
+  display: flex;
+  place-content: space-around;
+  gap: 5px;
+  margin-left: 39px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.portfolio h1 {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.portfolio p {
+  padding-left: 40px;
+  padding-right: 40px;
 }

@@ -72,7 +72,7 @@ footer {
   width: 168px;
   height: 65px;
   cursor: pointer;
-  background-color: #fdc855;
+  background-color: #f5a5f8;
 
   text-align: center;
   font-family: open sans;
@@ -80,11 +80,11 @@ footer {
   padding-top: 8px;
 }
 .knap_portfolio:hover {
-  box-shadow: 0 2px 10px 0 #ff4d00;
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
 }
 .knap_portfolio:active {
   background-color: #ff4d00;
-  box-shadow: 0 2px 10px 0 #fdc855;
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
   transform: translateY(3px);
 }
 
@@ -95,18 +95,68 @@ footer {
   width: 249px;
   height: 65px;
   cursor: pointer;
-  background-color: #fdc855;
+  background-color: #f5a5f8;
 
   text-align: center;
   font-family: open sans;
-  font-size: large;
-  padding-top: 8px;
+  font-size: 0.9rem;
+  padding-top: 10px;
 }
-.knap_portfolio:hover {
-  box-shadow: 0 2px 10px 0 #ff4d00;
+
+.indhold_knap {
+  margin-bottom: 10px;
 }
-.knap_portfolio:active {
+
+.web_knap:hover {
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+}
+.web_knap:active {
   background-color: #ff4d00;
-  box-shadow: 0 2px 10px 0 #fdc855;
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
   transform: translateY(3px);
+}
+
+.ux_knap:hover {
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+}
+
+.ux_knap:active {
+  background-color: #ff4d00;
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+  transform: translateY(3px);
+}
+
+.animation_knap:hover {
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+}
+
+.animation_knap:active {
+  background-color: #ff4d00;
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+  transform: translateY(3px);
+}
+
+.indhold_knap:hover {
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+}
+
+.indhold_knap:active {
+  background-color: #ff4d00;
+  box-shadow: 0 2px 10px 0 rgb(254, 254, 145);
+  transform: translateY(3px);
+}
+
+/************** styling af portfolio **************/
+.main_portfolie {
+  font-family: open sans;
+  line-height: 25px;
+}
+
+.main_portfolie h1 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.main_portfolie p {
+  font-size: 0.9rem;
+  padding-bottom: 10px;
 }
