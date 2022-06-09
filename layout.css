@@ -238,6 +238,13 @@ footer {
 .portfolio h1 {
   display: flex;
   place-content: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.portfolio p {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* placering af 1 knap */
@@ -253,20 +260,37 @@ footer {
 .ux_btn,
 .indhold_btn {
   display: flex;
-  place-content: space-around;
+  justify-content: space-around;
   gap: 5px;
-  margin-left: 39px;
-  margin-right: 100px;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.portfolio h1 {
-  padding: 20px;
-  margin-top: 50px;
+.web_billeder,
+.ux_billeder,
+.animation_billeder,
+.indhold_billeder {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.portfolio p {
-  padding-left: 40px;
-  padding-right: 40px;
+.indhold_billeder {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 700px) {
+  .main_portfolie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+  }
+
+  .web_btn,
+  .animation_btn,
+  .ux_btn,
+  .indhold_btn {
+    padding-bottom: 30px;
+  }
 }
