@@ -92,7 +92,7 @@ footer {
 .ux_knap,
 .animation_knap,
 .indhold_knap {
-  width: 249px;
+  max-width: 749px;
   height: 65px;
   cursor: pointer;
   background-color: #f5a5f8;
