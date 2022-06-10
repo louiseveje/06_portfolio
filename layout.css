@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/************ CSS variabler ****************/
+/********************************* CSS variabler ***************************************/
 HTML {
   --pinkknap: #f5a5f8;
   --shadow: rgb(254, 254, 145);
@@ -27,6 +27,7 @@ body {
   background-color: #aad9ff;
 }
 
+/**************************************** HEADER ***********************************************/
 /********** STYLING HEADER **********/
 ul {
   list-style: none;
@@ -101,6 +102,7 @@ ul {
   }
 }
 
+/**************************************** FOOTER ***********************************************/
 /********** STYLING FOOTER **********/
 footer {
   font-size: 1.7rem;
@@ -120,6 +122,8 @@ footer {
   display: flex;
   place-content: space-between;
 }
+
+/**************************************** BAGGRUNDSBILLEDER ***********************************************/
 
 /******** placering baggrundsbilleder mobile ********/
 .forside {
@@ -166,6 +170,7 @@ footer {
   }
 }
 
+/**************************************** CV/OM MIG ***********************************************/
 /********** STYLING CV **********/
 .cv_1 {
   font-family: var(--font);
@@ -288,6 +293,7 @@ footer {
   }
 }
 
+/**************************************** KNAPPER ***********************************************/
 /************ styling af knapper**************/
 .knap_portfolio {
   width: 168px;
@@ -367,6 +373,7 @@ footer {
   transform: translateY(3px);
 }
 
+/**************************************** PORTFOLIE ***********************************************/
 /************** styling af portfolio **************/
 .main_portfolie {
   font-family: var(--font);
