@@ -181,7 +181,6 @@ footer {
   list-style: none;
   color: black;
   font-size: 0.9rem;
-  font-family: var(--font);
   padding-top: 10px;
 }
 
@@ -190,7 +189,7 @@ footer {
 }
 
 .cv_1 h1 {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-weight: bolder;
   font-size: 1.5rem;
 }
@@ -201,14 +200,24 @@ footer {
   font-size: 1.1rem;
 }
 
+.cv_tekst p {
+  font-size: 0.9rem;
+}
+
 /******** placering om mig mobile ********/
 .cv_1 {
   margin: 30px;
   padding-bottom: 50px;
 }
 
+.cv_1 h2 {
+  max-width: 60ch;
+}
+
 .portraet_tekst {
   padding-top: 10px;
+  max-width: 70ch;
+  min-width: 40ch;
   margin-bottom: 50px;
 }
 
@@ -226,7 +235,6 @@ footer {
     order: -1;
     grid-column-start: 2; /* start på kolonne 2 */
     grid-column-end: 3; /* slut på kolonne 3 */
-    min-width: 40ch;
   }
 
   .portraet_billede {
@@ -249,7 +257,8 @@ footer {
     order: -1;
     grid-column-start: 2; /* start på kolonne 2 */
     grid-column-end: 3; /* slut på kolonne 3 */
-    width: 60ch; /* max 60 characters pr linje */
+    max-width: 70ch; /* max 60 characters pr linje */
+    min-width: 40ch; /* min 60 characters pr linje */
   }
 
   .portraet_billede {
@@ -259,12 +268,7 @@ footer {
   }
 }
 
-/******** placering cv mobile med flex ********/
-.cv_1 h1 {
-  display: flex;
-  justify-content: center;
-  max-width: 50ch;
-}
+/******** placering cv mobile ********/
 
 .cv_tekst p {
   padding-bottom: 25px;
@@ -401,8 +405,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 20px;
-  margin-bottom: 40px;
+  /* padding: 20px; */
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
+.temaer img {
+  border: solid 1px rgb(115, 115, 178);
 }
 
 /******** placering af portfolio forside desktop ********/
@@ -475,7 +484,7 @@ footer {
 .indhold_billeder {
   grid-column-start: 2;
   grid-column-end: 3;
-  max-width: 640px;
+  max-width: 550px;
 }
 
 .indhold_billeder {
