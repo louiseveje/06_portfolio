@@ -30,7 +30,7 @@ body {
 /**************************************** HEADER ***********************************************/
 /********** STYLING HEADER **********/
 ul {
-  /* burdermenu liste*/
+  /* burgermenu liste*/
   list-style: none;
   color: #707070;
   font-size: 1.7rem;
@@ -304,7 +304,7 @@ footer {
 /**************************************** KNAPPER ***********************************************/
 /************ styling af knapper**************/
 .knap_portfolio {
-  width: 168px; /*bredde på knappen*/
+  width: 472px; /*bredde på knappen*/
   height: 65px; /*højde på knappen*/
   cursor: pointer; /*når musen er over knappen*/
   background-color: var(--pinkknap);
