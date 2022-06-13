@@ -303,22 +303,23 @@ footer {
 
 /**************************************** KNAPPER ***********************************************/
 /************ styling af knapper**************/
-.knap_portfolio {
-  width: 472px; /*bredde på knappen*/
+.knap {
+  width: 450px; /*bredde på knappen*/
   height: 65px; /*højde på knappen*/
   cursor: pointer; /*når musen er over knappen*/
+  border: solid 1px var(--pinkknap);
   background-color: var(--pinkknap);
 
   text-align: center; /*placer teksten i midten af knappen*/
   font-family: var(--font);
   font-size: 1rem;
-  padding-top: 8px;
+  padding: 20px;
 }
-.knap_portfolio:hover {
+.knap:hover {
   /*skygge når man holder musen henover knappen*/
   box-shadow: 0 2px 10px 0 var(--shadow);
 }
-.knap_portfolio:active {
+.knap:active {
   /*baggrundsfarve og skygge når man klikker på knappen*/
   background-color: var(--activeknapbg);
   box-shadow: 0 2px 10px 0 var(--shadow);
@@ -326,10 +327,10 @@ footer {
   transform: translateY(3px);
 }
 
-.web_knap,
-.ux_knap,
-.animation_knap,
-.indhold_knap {
+.web_btn,
+.ux_btn,
+.animation_btn,
+.indhold_btn {
   /*maximal størrelse på knappen, den ændrer sig når man er i desktop*/
   max-width: 749px;
   height: 65px;
@@ -342,44 +343,44 @@ footer {
   padding-top: 10px;
 }
 
-.indhold_knap {
+.indhold_btn {
   margin-bottom: 10px;
 }
 
-.web_knap:hover {
+.web_btn:hover {
   box-shadow: 0 2px 10px 0 var(--shadow);
 }
-.web_knap:active {
+.web_btn:active {
   background-color: var(--activeknapbg);
   box-shadow: 0 2px 10px 0 var(--shadow);
   transform: translateY(3px);
 }
 
-.ux_knap:hover {
+.ux_btn:hover {
   box-shadow: 0 2px 10px 0 var(--shadow);
 }
 
-.ux_knap:active {
+.ux_btn:active {
   background-color: var(--activeknapbg);
   box-shadow: 0 2px 10px 0 var(--shadow);
   transform: translateY(3px);
 }
 
-.animation_knap:hover {
+.animation_btn:hover {
   box-shadow: 0 2px 10px 0 var(--shadow);
 }
 
-.animation_knap:active {
+.animation_btn:active {
   background-color: var(--activeknapbg);
   box-shadow: 0 2px 10px 0 var(--shadow);
   transform: translateY(3px);
 }
 
-.indhold_knap:hover {
+.indhold_btn:hover {
   box-shadow: 0 2px 10px 0 var(--shadow);
 }
 
-.indhold_knap:active {
+.indhold_btn:active {
   background-color: var(--activeknapbg);
   box-shadow: 0 2px 10px 0 var(--shadow);
   transform: translateY(3px);
@@ -410,10 +411,14 @@ footer {
   margin: 20px;
 }
 
+.text p {
+  padding-bottom: 0;
+}
+
 /******** placering af portfolio forside mobile ********/
-.knap {
+
+.knap_portfolio {
   display: flex;
-  /*placer i midten med space rundt om*/
   justify-content: space-around;
   margin-top: 30px;
 }
