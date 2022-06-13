@@ -447,7 +447,7 @@ footer {
   display: flex;
   /*placer i midten med space rundt om*/
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 60px;
   padding-top: 20px;
 }
 
