@@ -224,7 +224,7 @@ footer {
   padding-top: 10px;
   max-width: 70ch; /*max 70ch pr linje*/
   min-width: 40ch; /*max 40ch pr linje*/
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 /******** placering om mig desktop ********/
@@ -273,6 +273,17 @@ footer {
 }
 
 /******** placering cv mobile ********/
+
+/* gå til cv link */
+.link {
+  font-family: var(--font);
+  color: var(--activeknapbg);
+  padding-top: 20px;
+}
+
+.link:hover {
+  transform: translateY(-5px) translateX(3px);
+}
 
 .cv_tekst p {
   padding-bottom: 25px;
@@ -407,7 +418,7 @@ footer {
 .portfolio_overskrift {
   font-family: var(--font);
   font-size: 1.5rem;
-  border-top: solid #707070 1px;
+  border-top: solid #85abca 1px;
   margin: 20px;
 }
 
@@ -420,7 +431,7 @@ footer {
 .knap_portfolio {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .portfolio_overskrift {
