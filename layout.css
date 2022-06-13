@@ -403,13 +403,27 @@ footer {
   padding-bottom: 10px;
 }
 
-/******** placering af portfolio forside mobile ********/
+.portfolio_overskrift {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  border-top: solid #707070 1px;
+  margin: 20px;
+}
 
+/******** placering af portfolio forside mobile ********/
 .knap {
   display: flex;
   /*placer i midten med space rundt om*/
   justify-content: space-around;
   margin-top: 30px;
+}
+
+.portfolio_overskrift {
+  display: flex;
+  /*placer i midten med space rundt om*/
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-top: 20px;
 }
 
 .temaer {
@@ -421,8 +435,13 @@ footer {
   padding-bottom: 50px;
 }
 
-.temaer img {
+figure {
   border: solid 1px #85abca; /*border på billederne*/
+  padding-bottom: 5px;
+  background-color: white;
+}
+figcaption {
+  padding-left: 5px;
 }
 
 /******** placering af portfolio forside desktop ********/
