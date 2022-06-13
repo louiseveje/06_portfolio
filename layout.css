@@ -489,7 +489,7 @@ figcaption {
 .indhold {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  margin: 20px;
+  margin: 10px;
 }
 
 .web_content,
@@ -500,7 +500,7 @@ figcaption {
   grid-column-start: 2;
   grid-column-end: 3;
   max-width: 60ch;
-  min-width: 42ch;
+  min-width: 38ch;
 }
 
 .web_content h1,
@@ -514,7 +514,7 @@ figcaption {
 .ux_content,
 .animation_content,
 .indhold_content {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .web_btn,
