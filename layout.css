@@ -647,6 +647,7 @@ figcaption {
   max-width: 60ch;
   min-width: 38ch;
   padding-top: 50px;
+  margin: 10px;
 }
 
 .eksamen_content h1 {
