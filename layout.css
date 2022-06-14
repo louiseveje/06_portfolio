@@ -39,7 +39,7 @@ ul {
 
 .logo {
   /*logo portfolio*/
-  font-family: petit formal script;
+  font-family: "Petit Formal Script", cursive;
   color: #707070;
   font-size: 3rem;
 }
@@ -117,7 +117,7 @@ footer {
   position: fixed; /*klister footer til bunden*/
   bottom: 0;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
 }
 
 .footer {
@@ -154,8 +154,13 @@ footer {
 
 .portfolio {
   background-image: url(billeder/baggrund_portfolio.webp);
-  height: 90vh;
-  background-position: 3% 147%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.eksamen {
+  background-image: url(billeder/baggrund_eksamen.webp);
+  height: 110vh;
   background-size: cover;
 }
 
@@ -171,6 +176,9 @@ footer {
   }
 
   .portfolio {
+    height: 110vh;
+  }
+  .eksamen {
     height: 110vh;
   }
 }
@@ -350,7 +358,8 @@ footer {
 .web_btn,
 .ux_btn,
 .animation_btn,
-.indhold_btn {
+.indhold_btn,
+.eksamen_btn {
   /*maximal størrelse på knappen, den ændrer sig når man er i desktop*/
   max-width: 749px;
   height: 65px;
@@ -401,6 +410,16 @@ footer {
 }
 
 .indhold_btn:active {
+  background-color: var(--activeknapbg);
+  box-shadow: 0 2px 10px 0 var(--shadow);
+  transform: translateY(3px);
+}
+
+.eksamen_btn:hover {
+  box-shadow: 0 2px 10px 0 var(--shadow);
+}
+
+.eksamen_btn:active {
   background-color: var(--activeknapbg);
   box-shadow: 0 2px 10px 0 var(--shadow);
   transform: translateY(3px);
@@ -501,6 +520,7 @@ figcaption {
   grid-column-end: 3;
   max-width: 60ch;
   min-width: 38ch;
+  padding-top: 50px;
 }
 
 .web_content h1,
@@ -508,13 +528,6 @@ figcaption {
 .animation_content h1,
 .indhold_content h1 {
   padding-bottom: 10px;
-}
-
-.web_content,
-.ux_content,
-.animation_content,
-.indhold_content {
-  padding-top: 50px;
 }
 
 .web_btn,
@@ -525,13 +538,6 @@ figcaption {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-bottom: 20px;
-}
-
-.web_knap,
-.animation_knap,
-.ux_knap,
-.indhold_knap {
-  margin-bottom: 10px;
 }
 
 .web_billeder,
@@ -547,6 +553,8 @@ figcaption {
 .indhold_billeder {
   margin-bottom: 50px;
 }
+
+/* ******* placering af portfolio desktop ******* */
 
 @media (min-width: 1025px) {
   /*nulstil grid*/
@@ -584,5 +592,117 @@ figcaption {
   .indhold_content {
     /*nulstil padding-top*/
     padding-top: revert;
+  }
+
+  .indhold_billeder {
+    margin-bottom: 50px;
+  }
+}
+
+/**************************** EKSAMEN ********************************/
+/****** styling eksamen ********/
+.eksamen_content {
+  max-width: 60ch;
+  min-width: 40ch;
+}
+
+.eksamen_portfolio {
+  font-family: var(--font);
+  /*mellemrummet mellem linjerne*/
+  line-height: 25px;
+}
+
+.eksamen_portfolio h1 {
+  font-size: 1.3rem;
+  /*tykkelse på skriften*/
+  font-weight: bolder;
+}
+.eksamen_portfolio p {
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+
+.text p {
+  padding-bottom: 0;
+}
+
+/******** placering af eksamen mobile ********/
+.eksamen_btn {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.eksamen_portfolio {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  margin: 10px;
+}
+
+.eksamen_content {
+  /*placer indhold i midterste kolonne*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  max-width: 60ch;
+  min-width: 40ch;
+  padding-top: 50px;
+}
+
+.eksamen_content h1 {
+  padding-bottom: 10px;
+}
+
+.eksamen_btn {
+  /*placer knap i midterste kolonne*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-bottom: 20px;
+}
+
+.eksamen_billeder {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /*maximal størrelse på billederne*/
+  max-width: 550px;
+}
+
+.eksamen_billeder {
+  margin-bottom: 50px;
+}
+
+/******** placering af eksamen desktop ********/
+@media (min-width: 1025px) {
+  /*nulstil grid*/
+
+  .eksamen_portfolio {
+    display: revert;
+  }
+
+  .eksamen_portfolio {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .eksamen_content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .eksamen_billeder {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-top: 82px;
+    min-width: 500px;
+  }
+
+  .eksamen_btn {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .eksamen_portfolie p {
+    max-width: 70ch;
+    min-width: 50ch;
   }
 }
