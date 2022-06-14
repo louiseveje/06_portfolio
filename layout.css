@@ -681,7 +681,7 @@ figcaption {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .eksamen_content {
@@ -692,7 +692,7 @@ figcaption {
   .eksamen_billeder {
     grid-column-start: 3;
     grid-column-end: 4;
-    padding-top: 82px;
+    padding-top: 92px;
     min-width: 500px;
   }
 
@@ -702,7 +702,7 @@ figcaption {
   }
 
   .eksamen_portfolie p {
-    max-width: 70ch;
+    max-width: 65ch;
     min-width: 50ch;
   }
 }
