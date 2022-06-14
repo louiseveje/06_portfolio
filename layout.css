@@ -560,10 +560,6 @@ figcaption {
   max-width: 550px;
 }
 
-.indhold_billeder {
-  padding-bottom: 100px;
-}
-
 /* ******* placering af portfolio desktop ******* */
 
 @media (min-width: 1025px) {
@@ -602,11 +598,6 @@ figcaption {
   .indhold_content {
     /*nulstil padding-top*/
     padding-top: revert;
-  }
-
-  .indhold_billeder {
-    /*space ned til footer*/
-    margin-bottom: 50px;
   }
 }
 
