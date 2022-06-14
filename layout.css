@@ -1,5 +1,6 @@
 /** @format */
 
+/*nulstil sitets default styling*/
 * {
   all: unset;
   display: revert;
@@ -7,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/********************************* CSS variabler ***************************************/
+/********************************* CSS variabler (var--) ***************************************/
 HTML {
   --pinkknap: #f5a5f8;
   --shadow: #fefe91;
@@ -63,6 +64,7 @@ ul {
 /* skjul burgermenu når den er desktop format */
 .toggle-btn {
   background: transparent;
+  /*musen er en finger*/
   cursor: pointer;
 
   display: none; /* Skjul knappen som standard */
@@ -218,6 +220,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/*styling af "knap" til cv*/
 .link {
   font-family: var(--font);
   color: var(--activeknapbg);
@@ -225,6 +228,7 @@ footer {
 }
 
 .link:hover {
+  /*den transformerer op og til højre når man holder musen over*/
   transform: translateY(-5px) translateX(3px);
 }
 
@@ -245,7 +249,7 @@ footer {
   margin-bottom: 80px;
 }
 
-/* gå til cv link */
+/* gå til cv knap */
 .link {
   /*start med at fjerne link til cv i mobil*/
   display: none;
@@ -451,12 +455,14 @@ footer {
 }
 
 .text p {
+  /*nulstil padding bottom fra paragraf padding ovenfor*/
   padding-bottom: 0;
 }
 
 /******** placering af portfolio forside mobile ********/
 
 .knap_portfolio {
+  /*placer i midten med space rundt om*/
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -464,7 +470,6 @@ footer {
 
 .portfolio_overskrift {
   display: flex;
-  /*placer i midten med space rundt om*/
   justify-content: space-around;
   margin-top: 60px;
   padding-top: 20px;
@@ -481,10 +486,12 @@ footer {
 
 figure {
   border: solid 1px #85abca; /*border på billederne*/
+  /*baggrunden under billedet*/
   padding-bottom: 5px;
   background-color: white;
 }
 figcaption {
+  /*inden i borderen*/
   padding-left: 5px;
 }
 
@@ -557,7 +564,7 @@ figcaption {
 /* ******* placering af portfolio desktop ******* */
 
 @media (min-width: 1025px) {
-  /*nulstil grid*/
+  /*nulstil grid fra mobil*/
   .web,
   .ux,
   .animation,
@@ -595,6 +602,7 @@ figcaption {
   }
 
   .indhold_billeder {
+    /*space ned til footer*/
     margin-bottom: 50px;
   }
 }
@@ -671,8 +679,7 @@ figcaption {
 
 /******** placering af eksamen desktop ********/
 @media (min-width: 1025px) {
-  /*nulstil grid*/
-
+  /*nulstil grid fra mobil*/
   .eksamen_portfolio {
     display: revert;
   }
@@ -693,6 +700,7 @@ figcaption {
     grid-column-start: 3;
     grid-column-end: 4;
     padding-top: 92px;
+    /*minimum bredde på billede, gør så den ikke bliver helt lille, når man trækker skærmen ind*/
     min-width: 500px;
   }
 
